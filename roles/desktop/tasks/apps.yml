@@ -8,13 +8,19 @@
     - curl
     - dnsutils
     - git
+    - htop
     - libtool
     - net-tools
+    - nmap
+    - pass
+    - pwgen
     - ripgrep
     - rsync
     - the_silver_searcher
     - tcpdump
     - tlp
+    - tmux
+    - vim
     - whois
 
 - name: Install applications
@@ -30,20 +36,14 @@
     - gimp
     - gnome-boxes
     - gnome-weather
-    - htop
     - libreoffice
     - mpv
     - nextcloud-client
-    - nmap
-    - pass
     - pdfarranger
-    - pwgen
     - rclone-browser
     - remmina
-    - tmux
     - torbrowser-launcher
     - transmission
-    - vim
     - virt-manager
     - wireshark
     - wkhtmltopdf
