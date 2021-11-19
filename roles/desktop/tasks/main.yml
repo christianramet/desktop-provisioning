@@ -43,3 +43,6 @@
 
 - include: recoll.yml
   tags: apps
+
+- include: kubectl.yml
+  tags: kubectl
