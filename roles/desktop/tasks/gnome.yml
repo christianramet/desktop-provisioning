@@ -1,0 +1,63 @@
+---
+- name: Install Gnome configuration packages and prerequisites
+  become: yes
+  dnf:
+    state: present
+    name:
+    - gnome-tweaks
+    - dconf-editor
+    - python3-psutil
+
+- name: Set keyboard input sources
+  dconf:
+    key: "/org/gnome/desktop/input-sources/sources"
+    value: "[('xkb', 'us+altgr-intl')]"
+    state: present
+
+- name: Remap capslock to control
+  dconf:
+    key: "/org/gnome/desktop/input-sources/xkb-options"
+    value: "['caps:ctrl_modifier']"
+    state: present
+
+- name: Disable Alt+SPC binding
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/activate-window-menu"
+    value: "['']"
+    state: present
+
+- name: Enable resizing of windows with right button
+  dconf:
+    key: "/org/gnome/desktop/wm/preferences/resize-with-right-button"
+    value: "true"
+    state: present
+
+- name: Set favorite applications
+  dconf:
+    key: "/org/gnome/shell/favorite-apps"
+    value: "['org.gnome.Terminal.desktop', 'chromium.desktop', 'emacs.desktop', 'slack_slack.desktop']"
+    state: present
+
+- name: Set power button action to sleep
+  dconf:
+    key: "/org/gnome/settings-daemon/plugins/power/power-button-action"
+    value: "'suspend'"
+    state: present
+
+- name: Set Media Key for Next Track
+  dconf:
+    key: "/org/gnome/settings-daemon/plugins/media-keys/next"
+    value: "['<Super>c']"
+    state: present
+
+- name: Set Media Key for Previous Track
+  dconf:
+    key: "/org/gnome/settings-daemon/plugins/media-keys/previous"
+    value: "['<Super>z']"
+    state: present
+
+- name: Set Media Key for Play/Pause
+  dconf:
+    key: "/org/gnome/settings-daemon/plugins/media-keys/play"
+    value: "['<Super>x']"
+    state: present

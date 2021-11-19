@@ -1,0 +1,22 @@
+---
+- include: applications.yml
+  tags: apps
+
+- include: gnome.yml
+  tags:
+    - gnome
+    - config
+
+- include: git.yml
+  tags:
+    - apps
+    - config
+
+- include: emacs.yml
+  tags: emacs
+
+- include: dotfiles.yml
+  tags: config
+
+- include: recoll.yml
+  tags: apps

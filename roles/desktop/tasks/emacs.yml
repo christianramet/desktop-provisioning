@@ -1,0 +1,50 @@
+---
+- name: Install Emacs dependancies
+  become: yes
+  dnf:
+    state: present
+    name:
+    - clang
+    - cmake
+    - fd-find
+    - git
+    - hunspell
+    - hunspell-en-US
+    - hunspell-fr
+    - python3-mutagen
+    - ripgrep
+    - the_silver_searcher
+
+- name: Install Emacs pdf-tools dependancies
+  become: yes
+  dnf:
+    state: present
+    name:
+    - autoconf
+    - automake
+    - g++
+    - gcc
+    - libpng
+    - make
+#    - pkg-config
+
+- name: Install Emacs
+  become: yes
+  dnf:
+    state: present
+    name:
+    - emacs
+
+- name: Clone the Emacs config repo
+  git:
+    accept_hostkey: yes
+    repo: "{{ emacs_repo }}"
+    dest: "{{ emacs_dir }}"
+    version: master
+  register: emacs_pull_result
+
+- name: Make Emacs config
+  when: emacs_pull_result.before != emacs_pull_result.after
+  make:
+    chdir: "{{ emacs_dir }}"
+    target: all

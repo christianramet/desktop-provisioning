@@ -1,0 +1,22 @@
+---
+# Note: recoll.conf is provided by the dotfiles repo
+- name: Install Recoll and suggested packages
+  become: yes
+  dnf:
+    state: present
+    name:
+    - recoll
+    - antiword
+    - catdoc
+    - ghostscript
+    - libimage-exiftool-perl
+    - poppler-utils
+    - pstotext
+    - unrtf
+    - untex
+
+- name: Add Recoll daemon for indexing as autostart script
+  copy:
+    src: files/recollindex.desktop
+    dest: ~/.config/autostart/
+    mode: '0640'

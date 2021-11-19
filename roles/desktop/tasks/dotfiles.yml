@@ -1,0 +1,21 @@
+---
+- name: Install dotfiles dependancies
+  become: yes
+  dnf:
+    state: present
+    name:
+    - git
+    - stow
+
+- name: Clone the dotfiles repo
+  git:
+    accept_hostkey: yes
+    repo: "{{ dotfiles_repo }}"
+    dest: "{{ dotfiles_dir }}"
+  register: dotfiles_pull_result
+
+- name: Make dotfiles
+  make:
+    chdir: "{{ dotfiles_dir }}"
+    target: all
+  when: dotfiles_pull_result.before != dotfiles_pull_result.after
