@@ -43,6 +43,7 @@
     - pdfarranger
     - rclone-browser
     - remmina
+    - syncthing-gtk
     - torbrowser-launcher
     - transmission
     - virt-manager
