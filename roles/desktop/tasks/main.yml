@@ -1,18 +1,28 @@
 ---
 - include: core.yml
-  tags: apps
+  tags:
+    - apps
+    - core
 
 - include: rpm-fusion.yml
-  tags: apps
+  tags:
+    - apps
+    - fusion
 
 - include: python-pip.yml
-  tags: apps
+  tags:
+    - apps
+    - python
 
 - include: flatpak.yml
-  tags: apps
+  tags:
+    - apps
+    - flatpak
 
 - include: snap.yml
-  tags: apps
+  tags:
+    - apps
+    - snap
 
 - include: gnome.yml
   tags:
@@ -23,9 +33,12 @@
   tags:
     - apps
     - config
+    - git
 
 - include: emacs.yml
-  tags: emacs
+  tags:
+    - apps
+    - emacs
 
 - include: dotfiles.yml
   tags: config
