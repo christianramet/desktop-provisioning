@@ -1,11 +1,11 @@
 # How to use this project
 
 Normal usage:
-    ansible-playbook --ask-become-pass <playbook>.yml
-    ansible-playbook --ask-become-pass <playbook>.yml --tags apps
+`ansible-playbook --ask-become-pass <playbook>.yml`
+`ansible-playbook --ask-become-pass <playbook>.yml --tags apps`
 
 Test:
-    ansible-playbook --ask-become-pass --check <playbook>.yml
+`ansible-playbook --ask-become-pass --check <playbook>.yml`
 
 Bootstrap:
-    ./bootstrap.sh [tag1 tag2 ...]
+`./bootstrap.sh [tag1 tag2 ...]`
