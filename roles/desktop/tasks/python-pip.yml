@@ -1,0 +1,14 @@
+---
+- name: Install pip (python)
+  become: yes
+  dnf:
+    state: present
+    name:
+    - python3-pip
+
+- name: Install python applications with pip
+  pip:
+    state: present
+    name:
+      - youtube-dl
+

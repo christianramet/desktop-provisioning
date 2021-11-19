@@ -1,0 +1,51 @@
+---
+- name: Install core packages
+  become: yes
+  dnf:
+    state: present
+    name:
+    - cmake
+    - curl
+    - dnsutils
+    - git
+    - libtool
+    - net-tools
+    - ripgrep
+    - rsync
+    - the_silver_searcher
+    - tcpdump
+    - tlp
+    - whois
+
+- name: Install applications
+  become: yes
+  dnf:
+    state: present
+    name:
+    - calibre
+    - cheese
+    - chromium
+    - evince
+    - filezilla
+    - gimp
+    - gnome-boxes
+    - gnome-weather
+    - htop
+    - libreoffice
+    - mpv
+    - nextcloud-client
+    - nmap
+    - pass
+    - pdfarranger
+    - pwgen
+    - rclone-browser
+    - remmina
+    - tmux
+    - torbrowser-launcher
+    - transmission
+    - vim
+    - virt-manager
+    - wireshark
+    - wkhtmltopdf
+    - zathura
+

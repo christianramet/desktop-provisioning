@@ -1,5 +1,17 @@
 ---
-- include: applications.yml
+- include: core.yml
+  tags: apps
+
+- include: rpm-fusion.yml
+  tags: apps
+
+- include: python-pip.yml
+  tags: apps
+
+- include: flatpak.yml
+  tags: apps
+
+- include: snap.yml
   tags: apps
 
 - include: gnome.yml

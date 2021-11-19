@@ -1,0 +1,13 @@
+---
+- name: Install snapd
+  become: yes
+  dnf:
+    state: present
+    name:
+    - snapd
+
+- name: Install snaps
+  become: yes
+  snap:
+    name:
+      - languagetool
