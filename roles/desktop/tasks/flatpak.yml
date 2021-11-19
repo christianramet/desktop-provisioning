@@ -5,14 +5,14 @@
     state: present
     flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
 
-- name: Install flatpak applications
+- name: Install flatpak applications from Flathub
   community.general.flatpak:
     method: user
-    # remote: flathub
+    remote: flathub
     name:
-      - com.slack.Slack
+      - com.bitwarden.desktop
       - com.discordapp.Discord
       - com.microsoft.Teams
-      - us.zoom.Zoom
-      - com.bitwarden.desktop
+      - com.slack.Slack
       - com.visualstudio.code
+      - us.zoom.Zoom
