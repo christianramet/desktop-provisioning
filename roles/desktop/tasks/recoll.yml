@@ -9,11 +9,8 @@
     - antiword
     - catdoc
     - ghostscript
-    - libimage-exiftool-perl
     - poppler-utils
-    - pstotext
     - unrtf
-    - untex
 
 - name: Add Recoll daemon for indexing as autostart script
   copy:
