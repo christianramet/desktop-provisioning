@@ -9,6 +9,7 @@
     - antiword
     - catdoc
     - ghostscript
+    - perl-Image-ExifTool
     - poppler-utils
     - unrtf
 
