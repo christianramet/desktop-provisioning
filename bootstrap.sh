@@ -1,7 +1,11 @@
 #!/bin/bash
 GIT_PROJECT_URL=git@github.com:christianramet/fedora-provisioning.git
 PLAYBOOK=fedora-desktop-playbook.yml
-TAGS=all
+TAGS=$@
+
+if [[ $# -eq 0 ]] ; then
+    TAGS=all
+fi
 
 REQUIREMENTS="ansible git"
 
@@ -17,7 +21,7 @@ sudo dnf install -y $REQUIREMENTS
 ansible-galaxy collection install community.general
 
 # Check ssh configuration
-if ! [ -e $SSH_KEY_PATH ]; then
+if ! [[ -e $SSH_KEY_PATH ]]; then
     ssh-keygen -t ed25519 -f "$SSH_KEY_PATH" -N ""
     echo "Import the following key into your remote git account:"
     cat ~/.ssh/$SSH_KEY_NAME.pub
