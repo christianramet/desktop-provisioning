@@ -17,11 +17,6 @@
     - apps
     - flatpak
 
-- include: snap.yml
-  tags:
-    - apps
-    - snap
-
 - include: gnome.yml
   tags:
     - gnome
