@@ -1,5 +1,5 @@
 ---
-- name: Install Emacs dependancies
+- name: Install Emacs various packages dependancies
   become: yes
   dnf:
     state: present
@@ -20,13 +20,15 @@
   dnf:
     state: present
     name:
-    - autoconf
-    - automake
-    - g++
-    - gcc
-    - libpng
     - make
-#    - pkg-config
+    - automake
+    - autoconf
+    - gcc
+    - gcc-c++
+    - ImageMagick
+    - libpng-devel
+    - zlib-devel
+    - poppler-glib-devel
 
 - name: Install Emacs
   become: yes
