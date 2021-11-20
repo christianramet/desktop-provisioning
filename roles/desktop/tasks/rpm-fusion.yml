@@ -11,14 +11,14 @@
 - name: Install rpm fusion packages
   become: yes
   dnf:
-    state: present
+    state: latest
     name:
     - ffmpeg
 
 - name: Install applications (rpm fusion)
   become: yes
   dnf:
-    state: present
+    state: latest
     name:
     - mpv
     - vlc

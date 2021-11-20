@@ -2,7 +2,7 @@
 - name: Install pip (python)
   become: yes
   dnf:
-    state: present
+    state: latest
     name:
     - python3-pip
 

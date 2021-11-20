@@ -2,7 +2,7 @@
 - name: Install NodeJS stack
   become: yes
   dnf:
-    state: present
+    state: latest
     name:
     - nodejs
     - yarnpkg

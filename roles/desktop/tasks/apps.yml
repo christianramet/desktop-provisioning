@@ -2,7 +2,7 @@
 - name: Install core packages
   become: yes
   dnf:
-    state: present
+    state: latest
     name:
     - cmake
     - curl
@@ -26,7 +26,7 @@
 - name: Install applications
   become: yes
   dnf:
-    state: present
+    state: latest
     name:
     - calibre
     - cheese

@@ -3,7 +3,7 @@
 - name: Install Recoll and suggested packages
   become: yes
   dnf:
-    state: present
+    state: latest
     name:
     - recoll
     - antiword

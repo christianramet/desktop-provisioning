@@ -18,7 +18,7 @@
 - name: Install Emacs pdf-tools dependancies
   become: yes
   dnf:
-    state: present
+    state: latest
     name:
     - make
     - automake
@@ -33,7 +33,7 @@
 - name: Install Emacs
   become: yes
   dnf:
-    state: present
+    state: latest
     name:
     - emacs
 

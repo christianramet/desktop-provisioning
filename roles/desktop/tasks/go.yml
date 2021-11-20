@@ -2,7 +2,7 @@
 - name: Install Golang stack
   become: yes
   dnf:
-    state: present
+    state: latest
     name:
     - golang
     - golang-x-tools-gopls

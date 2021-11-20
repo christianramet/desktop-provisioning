@@ -2,11 +2,10 @@
 - name: Install Gnome configuration packages and prerequisites
   become: yes
   dnf:
-    state: present
+    state: latest
     name:
     - gnome-tweaks
     - dconf-editor
-    - python3-psutil
 
 - name: Set keyboard input sources
   dconf:
