@@ -1,0 +1,8 @@
+---
+- name: Install Golang stack
+  become: yes
+  dnf:
+    state: present
+    name:
+    - golang
+    - golang-x-tools-gopls
