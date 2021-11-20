@@ -4,6 +4,7 @@
     name: flathub
     state: present
     flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
+    method: user
 
 - name: Install flatpak applications from Flathub
   community.general.flatpak:
