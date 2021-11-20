@@ -13,11 +13,10 @@ SSH_KEY_NAME=$USER@$HOSTNAME
 SSH_KEY_PATH=$HOME/.ssh/$SSH_KEY_NAME
 
 # Check prerequisites
-# if ! $(dnf list installed $REQUIREMENTS &> /dev/null); then
-#     sudo dnf install -y $REQUIREMENTS
-# fi
+if ! $(rpm -q $REQUIREMENTS &> /dev/null); then
+    sudo dnf install -y $REQUIREMENTS
+fi
 
-sudo dnf install -y $REQUIREMENTS
 ansible-galaxy collection install community.general
 
 # Check ssh configuration
