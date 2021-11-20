@@ -20,4 +20,5 @@
   dnf:
     state: present
     name:
+    - mpv
     - vlc
