@@ -44,3 +44,6 @@
 
 - include: go.yml
   tags: go
+
+- include: nodejs.yml
+  tags: nodejs

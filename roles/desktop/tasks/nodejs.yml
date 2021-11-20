@@ -1,0 +1,19 @@
+---
+- name: Install NodeJS stack
+  become: yes
+  dnf:
+    state: present
+    name:
+    - nodejs
+    - yarnpkg
+
+- name: Create the npm global directory
+  file:
+    path: ~/.npm-global
+    state: directory
+  register: nodejsdir
+
+- name: Configure nodejs global prefix
+  command: npm config set prefix '~/.npm-global'
+  when: nodejsdir.changed
+
