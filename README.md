@@ -14,13 +14,13 @@ some tasks.
 Bootstrap the project for the first time. This script can also be used
 everytime, with or without tags as parameters.
 
-`./bootstrap.sh [tag1 tag2 ...]`
+`./bootstrap.sh "tag1,tag2"`
 
 Use the playbook locally, with or without tags:
 
 `ansible-playbook --inventory localhost --ask-become-pass <playbook>.yml`
 
-`ansible-playbook --inventory localhost --ask-become-pass <playbook>.yml --tags apps`
+`ansible-playbook --inventory localhost --ask-become-pass <playbook>.yml --tags "tag1,tag2"`
 
 Test the playbook for diagnostics:
 
