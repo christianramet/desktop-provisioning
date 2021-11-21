@@ -36,7 +36,6 @@
     - foliate
     - gimp
     - gnome-boxes
-    - gnome-weather
     - libreoffice
     - nextcloud-client
     - pdfarranger
@@ -45,7 +44,6 @@
     - syncthing
     - torbrowser-launcher
     - transmission
-    - virt-manager
     - wireshark
     - wkhtmltopdf
     - zathura
