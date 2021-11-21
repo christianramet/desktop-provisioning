@@ -11,6 +11,7 @@
     - hunspell
     - hunspell-en-US
     - hunspell-fr
+    - libtool
     - python3-mutagen
     - ripgrep
     - the_silver_searcher
