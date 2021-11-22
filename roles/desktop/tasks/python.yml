@@ -11,4 +11,5 @@
     state: latest
     name:
       - awscli
+      - python-lsp-server[all]
       - youtube-dl

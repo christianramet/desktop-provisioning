@@ -7,10 +7,10 @@
     - apps
     - fusion
 
-- include: python-pip.yml
+- include: python.yml
   tags:
     - apps
-    - pip
+    - python
 
 - include: flatpak.yml
   tags:
