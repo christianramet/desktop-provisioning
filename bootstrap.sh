@@ -7,17 +7,18 @@ if [[ $# -eq 0 ]] ; then
     TAGS=all
 fi
 
-REQUIREMENTS="ansible git"
+PACKAGES="ansible git"
+COLLECTIONS="community.general"
 
 SSH_KEY_NAME=$USER@$HOSTNAME
 SSH_KEY_PATH=$HOME/.ssh/$SSH_KEY_NAME
 
 # Check prerequisites
-if ! $(rpm -q $REQUIREMENTS &> /dev/null); then
-    sudo dnf install -y $REQUIREMENTS
+if ! $(rpm -q $PACKAGES &> /dev/null); then
+    sudo dnf install -y $PACKAGES
 fi
 
-ansible-galaxy collection install community.general
+ansible-galaxy collection install $COLLECTIONS
 
 # Check ssh configuration
 if ! [[ -e $SSH_KEY_PATH ]]; then
