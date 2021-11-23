@@ -10,7 +10,7 @@ fi
 PACKAGES="ansible git"
 COLLECTIONS="community.general"
 
-SSH_KEY_NAME=$USER@$HOSTNAME
+SSH_KEY_NAME=id_ed25519
 SSH_KEY_PATH=$HOME/.ssh/$SSH_KEY_NAME
 
 # Check prerequisites
