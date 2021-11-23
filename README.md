@@ -25,5 +25,3 @@ Use the playbook locally, with or without tags:
 Test the playbook for diagnostics:
 
 `ansible-playbook --ask-become-pass --check <playbook>.yml`
-
-

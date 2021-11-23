@@ -1,0 +1,16 @@
+---
+- name: Download kepubify binary
+  get_url:
+    url: "https://github.com/pgaskin/kepubify/releases/download/v{{kepubify_version}}/kepubify-linux-64bit"
+    checksum: "{{kepubify_checksum}}"
+    dest: /tmp
+
+- name: Copy kepubify binary to destination directory
+  become: yes
+  copy:
+    src: "/tmp/kepubify-linux-64bit"
+    dest: "/usr/local/bin/kepubify"
+    mode: 0755
+    owner: root
+    group: root
+    remote_src: yes

@@ -42,6 +42,9 @@
 - include: kubectl.yml
   tags: kubectl
 
+- include: kepubify.yml
+  tags: kepubify
+
 - include: go.yml
   tags: go
 
