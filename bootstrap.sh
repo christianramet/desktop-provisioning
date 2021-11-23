@@ -1,11 +1,6 @@
 #!/bin/bash
 GIT_PROJECT_URL=git@github.com:christianramet/fedora-provisioning.git
 PLAYBOOK=fedora-desktop-playbook.yml
-TAGS=$@
-
-if [[ $# -eq 0 ]] ; then
-    TAGS=all
-fi
 
 PACKAGES="ansible git"
 COLLECTIONS="community.general"
@@ -34,5 +29,5 @@ ansible-pull --url $GIT_PROJECT_URL \
              --accept-host-key \
              --ask-become-pass \
              --inventory localhost \
-             --tags $TAGS \
+             --tags ${1:-all} \
              $PLAYBOOK
