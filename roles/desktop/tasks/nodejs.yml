@@ -19,6 +19,7 @@
 
 - name: Install npm packages
   npm:
+    global: yes
     state: latest
     name:
       - http-server
