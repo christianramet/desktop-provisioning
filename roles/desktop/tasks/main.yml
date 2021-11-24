@@ -24,7 +24,6 @@
 
 - include: git.yml
   tags:
-    - apps
     - config
     - git
 
