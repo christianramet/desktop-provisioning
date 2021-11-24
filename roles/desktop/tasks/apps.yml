@@ -1,4 +1,9 @@
 ---
+- name: Update dnf cache
+  become: yes
+  dnf:
+    update_cache: yes
+
 - name: Install core packages
   become: yes
   dnf:
