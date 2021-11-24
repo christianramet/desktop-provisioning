@@ -17,9 +17,8 @@
   command: npm config set prefix '~/.npm-global'
   when: nodejsdir.changed
 
-- name: Install npm packages
+- name: Install 'http-server' npm packages
   npm:
     global: yes
     state: latest
-    name:
-      - http-server
+    name: http-server
