@@ -10,3 +10,17 @@
     name: user.email
     scope: global
     value: "{{ git_email }}"
+
+- name: Create main git directory
+  file:
+    path: "{{ git_main_dir}}"
+    state: directory
+
+- name: Git checkout actively tracked repositories
+  git:
+    repo: "{{ item.repo }}"
+    dest: "{{ git_main_dir }}/{{ item.name }}"
+    depth: "{{ item.depth }}"
+  with_items: "{{ git_tracked_repositories }}"
+
+
