@@ -34,7 +34,7 @@
 - name: Set favorite applications
   dconf:
     key: "/org/gnome/shell/favorite-apps"
-    value: "['org.gnome.Terminal.desktop', 'chromium-browser.desktop', 'emacs.desktop', 'com.slack.Slack.desktop']"
+    value: "['org.gnome.Terminal.desktop', 'firefox.desktop', 'emacs.desktop', 'com.slack.Slack.desktop']"
     state: present
 
 - name: Set power button action to sleep
