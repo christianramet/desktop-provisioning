@@ -22,5 +22,3 @@ git_tracked_repositories:
   - { repo: git@github.com:abo-abo/oremacs.git, name: emacs-abo-abo, depth: 1 }
   - { repo: git@github.com:purcell/emacs.d.git, name: emacs-purcell, depth: 1 }
   - { repo: git@github.com:jwiegley/dot-emacs.git, name: emacs-jwiegley, depth: 1 }
-  - { repo: git@github.com:jethrokuan/.emacs.d.git, name: emacs-jethrokuan, depth: 1 }
-
