@@ -14,6 +14,7 @@
       - com.bitwarden.desktop
       - com.discordapp.Discord
       - com.microsoft.Teams
+      - com.skype.Client
       - com.slack.Slack
       - com.visualstudio.code
       - us.zoom.Zoom
