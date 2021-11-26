@@ -33,6 +33,7 @@
   dnf:
     state: latest
     name:
+    - azure-cli
     - calibre
     - cheese
     - chromium
