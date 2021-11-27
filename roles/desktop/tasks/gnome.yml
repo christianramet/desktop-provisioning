@@ -60,3 +60,9 @@
     key: "/org/gnome/settings-daemon/plugins/media-keys/play"
     value: "['<Super>x']"
     state: present
+
+- name: Disable Emoji keybinding
+  dconf:
+    key: "/desktop/ibus/panel/emoji/hotkey"
+    value: "['']"
+    state: present
