@@ -45,6 +45,8 @@
     - libreoffice
     - nextcloud-client
     - pdfarranger
+    - podman
+    - podman-compose
     - p7zip
     - rclone-browser
     - remmina
