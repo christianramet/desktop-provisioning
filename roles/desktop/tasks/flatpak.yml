@@ -16,6 +16,7 @@
       - com.microsoft.Teams
       - com.skype.Client
       - com.slack.Slack
+      - com.spotify.Client
       - com.visualstudio.code
       - org.zotero.Zotero
       - us.zoom.Zoom
