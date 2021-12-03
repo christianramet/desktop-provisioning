@@ -17,4 +17,5 @@
       - com.skype.Client
       - com.slack.Slack
       - com.visualstudio.code
+      - org.zotero.Zotero
       - us.zoom.Zoom
