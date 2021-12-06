@@ -14,6 +14,7 @@
     - dnsutils
     - git
     - htop
+    - java-11-openjdk
     - libtool
     - net-tools
     - nmap
@@ -37,6 +38,7 @@
     - calibre
     - cheese
     - chromium
+    - community-mysql
     - evince
     - filezilla
     - foliate
