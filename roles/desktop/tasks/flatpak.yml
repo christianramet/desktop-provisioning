@@ -14,6 +14,7 @@
       - com.bitwarden.desktop
       - com.discordapp.Discord
       - com.microsoft.Teams
+      - com.jgraph.drawio.desktop
       - com.skype.Client
       - com.slack.Slack
       - com.spotify.Client
