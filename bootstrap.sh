@@ -1,10 +1,8 @@
 #!/bin/bash
 GIT_PROJECT_URL=git@github.com:christianramet/fedora-provisioning.git
-PLAYBOOK=fedora-desktop-playbook.yml
-
+PLAYBOOK=playbook.yml
 PACKAGES="ansible git"
 COLLECTIONS="community.general"
-
 SSH_KEY_NAME=id_ed25519
 SSH_KEY_PATH=$HOME/.ssh/$SSH_KEY_NAME
 
@@ -23,8 +21,9 @@ if ! [[ -e $SSH_KEY_PATH ]]; then
     read -p "Press Enter when done and ready to proceed with ansible-pull." </dev/tty
 fi
 
-# Execute Ansible payload
 ssh-add $SSH_KEY_PATH
+
+# Execute Ansible payload
 ansible-pull --url $GIT_PROJECT_URL \
              --accept-host-key \
              --ask-become-pass \
