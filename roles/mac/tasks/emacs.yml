@@ -1,5 +1,5 @@
 ---
-- name: Install Emacs soft dependancies
+- name: Install Emacs optional dependancies
   homebrew:
     state: latest
     name:
