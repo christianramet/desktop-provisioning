@@ -7,6 +7,12 @@ SSH_KEY_NAME=id_ed25519
 SSH_KEY_PATH=$HOME/.ssh/$SSH_KEY_NAME
 GIT_PROJECT_URL=git@github.com:christianramet/fedora-provisioning.git
 
+### Check OS compatibility
+if ! [[ $(< /etc/redhat-release) =~ .*Fedora.* ]]; then
+    echo "This script is not compatible with the current operating system."
+    exit 1
+fi
+
 ### Check and install prerequisites
 if ! $(rpm -q $PACKAGES &> /dev/null); then
     sudo dnf install -y $PACKAGES
