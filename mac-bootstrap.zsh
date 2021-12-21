@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-PLAYBOOK=playbook.yml
+PLAYBOOK=mac-playbook.yml
 COLLECTIONS="community.general"
 SSH_KEY_NAME=id_ed25519
 SSH_KEY_PATH=$HOME/.ssh/$SSH_KEY_NAME
