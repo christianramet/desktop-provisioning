@@ -27,6 +27,7 @@ homebrew_cask_packages:
 - calibre
 - discord
 - docker
+- drawio
 - firefox
 - gimp
 - google-drive
