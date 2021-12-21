@@ -5,7 +5,14 @@
     name:
     - coreutils
     - fd
+    - hunspell
     - the_silver_searcher
+
+- name: Get dictionaries
+  get_url:
+    url: '{{ item.url }}'
+    dest: '{{ dictionaries_dir }}/{{ item.name }}'
+  with_items: '{{ dictionaries }}'
 
 - name: Install Emacs pdf-tools dependancies
   homebrew:

@@ -46,3 +46,10 @@ homebrew_cask_packages:
 - wkhtmltopdf
 - zoom
 - zotero
+
+dictionaries_dir: ~/Library/Spelling
+dictionaries:
+- { url: http://cgit.freedesktop.org/libreoffice/dictionaries/plain/en/en_US.aff, name: en_US.aff }
+- { url: http://cgit.freedesktop.org/libreoffice/dictionaries/plain/en/en_US.dic, name: en_US.dic }
+- { url: http://cgit.freedesktop.org/libreoffice/dictionaries/plain/fr_FR/fr.aff, name: fr_FR.aff }
+- { url: http://cgit.freedesktop.org/libreoffice/dictionaries/plain/fr_FR/fr.dic, name: fr_FR.dic }
