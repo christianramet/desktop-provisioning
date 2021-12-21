@@ -1,43 +1,54 @@
 ---
-- include: apps.yml
+- name: Apps
+  import_tasks: apps.yml
   tags: apps
 
-- include: rpm-fusion.yml
+- name: RPM Fusion
+  import_tasks: rpm-fusion.yml
   tags:
     - apps
     - fusion
 
-- include: python.yml
+- name: Python
+  import_tasks: python.yml
   tags:
     - apps
     - python
 
-- include: flatpak.yml
+- name: Flatpak
+  import_tasks: flatpak.yml
   tags:
     - apps
     - flatpak
 
-- include: gnome.yml
+- name: Gnome
+  import_tasks: gnome.yml
   tags:
     - gnome
     - config
 
-- include: emacs.yml
+- name: Emacs
+  import_tasks: emacs.yml
   tags:
     - apps
     - emacs
 
-- include: recoll.yml
+- name: Recoll
+  import_tasks: recoll.yml
   tags: apps
 
-- include: kubectl.yml
+- name: Kubectl
+  import_tasks: kubectl.yml
   tags: kubectl
 
-- include: kepubify.yml
+- name: Kepubify
+  import_tasks: kepubify.yml
   tags: kepubify
 
-- include: go.yml
+- name: Go
+  import_tasks: go.yml
   tags: go
 
-- include: nodejs.yml
+- name: NodeJS
+  import_tasks: nodejs.yml
   tags: nodejs
