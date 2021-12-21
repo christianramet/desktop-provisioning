@@ -1,12 +1,12 @@
 ---
 - name: Install homebrew packages
   homebrew:
-    name: '{{ item }}'
+    name: "{{ item }}"
     state: latest
-  with_items: '{{ homebrew_packages }}'
+  with_items: "{{ homebrew_packages }}"
 
 - name: Install homebrew cask packages
   community.general.homebrew_cask:
-    name: '{{ item }}'
+    name: "{{ item }}"
     state: latest
-  with_items: '{{ homebrew_cask_packages }}'
+  with_items: "{{ homebrew_cask_packages }}"
