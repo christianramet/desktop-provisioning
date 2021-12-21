@@ -1,0 +1,17 @@
+---
+- name: Configure git
+  import_tasks: git.yml
+  tags:
+    - config
+    - git
+
+- name: Configure Emacs
+  import_tasks: emacs.yml
+  tags:
+    - config
+    - emacs
+    
+- name: Setup dotfiles
+  import_tasks: dotfiles.yml
+  tags:
+    - config

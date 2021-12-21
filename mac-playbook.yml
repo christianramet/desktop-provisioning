@@ -2,4 +2,5 @@
 - hosts: localhost
   connection: local
   roles:
-    - desktop
+    - mac
+    - common

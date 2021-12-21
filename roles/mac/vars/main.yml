@@ -1,0 +1,47 @@
+homebrew_packages:
+- ansible
+- awscli
+- azure-cli
+- coreutils
+- exiftool
+- fd
+- fdupes
+- git
+- htop
+- kepubify
+- kubernetes-cli
+- nmap
+- pass
+- pwgen
+- ripgrep
+- rsync
+- stow
+- tcpdump
+- the_silver_searcher
+- tmux
+- watch
+- wget
+- youtube-dl
+
+homebrew_cask_packages:
+- calibre
+- discord
+- docker
+- firefox
+- gimp
+- google-drive
+- libreoffice
+- microsoft-teams
+- mpv
+- nextcloud
+- rectangle
+- slack
+- spotify
+- tor-browser
+- transmission
+- visual-studio-code
+- vlc
+- wireshark
+- wkhtmltopdf
+- zoom
+- zotero

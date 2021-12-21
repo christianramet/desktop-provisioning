@@ -1,12 +1,4 @@
 ---
-- name: Install dotfiles dependancies
-  become: yes
-  dnf:
-    state: latest
-    name:
-    - git
-    - stow
-
 - name: Clone the dotfiles repo
   git:
     accept_hostkey: yes

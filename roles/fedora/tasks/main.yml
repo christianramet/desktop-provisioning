@@ -22,18 +22,10 @@
     - gnome
     - config
 
-- include: git.yml
-  tags:
-    - config
-    - git
-
 - include: emacs.yml
   tags:
     - apps
     - emacs
-
-- include: dotfiles.yml
-  tags: config
 
 - include: recoll.yml
   tags: apps

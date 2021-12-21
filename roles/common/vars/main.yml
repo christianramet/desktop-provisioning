@@ -1,0 +1,15 @@
+---
+full_name: Christian Ramet
+git_email: git@christianramet.com
+
+emacs_repo:  git@github.com:christianramet/emacs.d
+emacs_dir: ~/.emacs.d  
+
+dotfiles_repo: git@github.com:christianramet/dotfiles
+dotfiles_dir: ~/.dotfiles
+
+git_main_dir: ~/git
+git_tracked_repositories:
+  - { repo: git@github.com:abo-abo/oremacs.git, name: emacs-abo-abo, depth: 1 }
+  - { repo: git@github.com:purcell/emacs.d.git, name: emacs-purcell, depth: 1 }
+  - { repo: git@github.com:jwiegley/dot-emacs.git, name: emacs-jwiegley, depth: 1 }

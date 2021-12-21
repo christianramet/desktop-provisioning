@@ -1,8 +1,9 @@
-# Ansible playbook for provisioning a Fedora Workstation
+# Ansible playbook for provisioning a personal Desktop env
 
 This Ansible project is meant for provisioning a complete workstation for my
-personal needs. It is built for a Fedora Workstation version 35 at least, but
-should be compatible with other versions with some tweaks.
+personal needs. It is built for:
+- Fedora Workstation (tested with version 35)
+- MacOS (tested with version 12.1 Monterey)
 
 The bootstrap process makes sure the `ansible` package is already installed with
 the required collections. It also create an ssh key if none is present to
@@ -14,7 +15,7 @@ some tasks.
 Bootstrap the project for the first time. This script can also be used
 everytime, with or without tags as parameters.
 
-`./bootstrap.sh "tag1,tag2"`
+`./bootstrap-<version>.sh "tag1,tag2"`
 
 Use the playbook locally, with or without tags:
 

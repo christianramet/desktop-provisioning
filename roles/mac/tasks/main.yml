@@ -1,0 +1,12 @@
+---
+- name: Install brew applications
+  import_tasks: brew.yml
+  tags:
+    - apps
+    - brew
+
+- name: Install Emacs
+  import_tasks: emacs.yml
+  tags:
+    - apps
+    - emacs

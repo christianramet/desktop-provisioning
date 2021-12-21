@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PLAYBOOK=playbook.yml
+PLAYBOOK=fedora-playbook.yml
 PACKAGES="ansible git"
 COLLECTIONS="community.general"
 SSH_KEY_NAME=id_ed25519

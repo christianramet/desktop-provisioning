@@ -1,0 +1,27 @@
+---
+- name: Install Emacs soft dependancies
+  homebrew:
+    state: latest
+    name:
+    - coreutils
+    - fd
+    - the_silver_searcher
+
+- name: Install Emacs pdf-tools dependancies
+  homebrew:
+    state: latest
+    name:
+      - autoconf
+      - automake
+      - pkg-config
+      - poppler
+
+- name: Tap railwaycat Homebrew repository
+  community.general.homebrew_tap:
+    name: railwaycat/emacsmacport
+    state: present
+
+- name: Install Homebrew cask packages
+  community.general.homebrew_cask:
+    name: emacs-mac
+    state: latest
