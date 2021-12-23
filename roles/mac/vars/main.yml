@@ -6,6 +6,7 @@ homebrew_packages:
 - exiftool
 - fd
 - fdupes
+- ffmpeg
 - git
 - htop
 - kepubify
