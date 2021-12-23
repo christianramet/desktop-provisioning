@@ -6,6 +6,12 @@ SSH_KEY_NAME=id_ed25519
 SSH_KEY_PATH=$HOME/.ssh/$SSH_KEY_NAME
 GIT_PROJECT_URL=git@github.com:christianramet/mac-provisioning.git
 
+### Check OS compatibility
+if [[ $(uname) != "Darwin" ]]; then
+    echo "This script is not compatible with the current operating system."
+    exit 1
+fi
+
 ### Check prerequisites
 if xcode-select -p &>/dev/null;then XCODE=installed fi
 if pgrep oahd &>/dev/null; then ROSETTA=installed fi
