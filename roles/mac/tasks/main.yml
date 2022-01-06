@@ -10,3 +10,8 @@
   tags:
     - apps
     - emacs
+
+- name: Install golang environment
+  import_tasks: golang.yml
+  tags:
+    - golang
