@@ -5,6 +5,7 @@
     name:
     - coreutils
     - fd
+    - ghostscript
     - hunspell
     - the_silver_searcher
 
