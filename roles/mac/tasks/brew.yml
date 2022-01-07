@@ -1,15 +1,15 @@
 ---
-- name: Install homebrew packages
+- name: Install and update homebrew packages
   homebrew:
     name: "{{ item }}"
-    state: installed
+    state: latest
   with_items: "{{ homebrew_packages }}"
   register: brew
 
-- name: Install homebrew cask packages
+- name: Install and update homebrew cask packages
   community.general.homebrew_cask:
     name: "{{ item }}"
-    state: installed
+    state: latest
   with_items: "{{ homebrew_cask_packages }}"
   register: brewcask
 
