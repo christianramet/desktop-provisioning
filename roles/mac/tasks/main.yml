@@ -16,9 +16,3 @@
   tags:
     - golang
     - lsp
-
-- name: Install node environment
-  import_tasks: node.yml
-  tags:
-    - node
-    - lsp

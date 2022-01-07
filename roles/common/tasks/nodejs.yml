@@ -1,11 +1,19 @@
 ---
-- name: Install NodeJS stack
+- name: Install NodeJS stack (Fedora)
+  when: ansible_facts['os_family'] == "Fedora"
   become: yes
   dnf:
     state: latest
     name:
     - nodejs
     - yarnpkg
+
+- name: Install NodeJS stack (MacOS)
+  when: ansible_facts['os_family'] == "Darwin"
+  homebrew:
+    state: latest
+    name:
+    - node
 
 - name: Create the npm global directory
   file:
@@ -17,8 +25,11 @@
   command: npm config set prefix '~/.npm-global'
   when: nodejsdir.changed
 
-- name: Install 'http-server' npm packages
+- name: Install npm packages
   npm:
     global: yes
     state: present
-    name: http-server
+    name: "{{ item }}"
+  loop:
+    - http-server
+    - bash-language-server    
