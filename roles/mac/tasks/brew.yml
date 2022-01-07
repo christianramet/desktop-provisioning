@@ -2,11 +2,17 @@
 - name: Install homebrew packages
   homebrew:
     name: "{{ item }}"
-    state: latest
+    state: installed
   with_items: "{{ homebrew_packages }}"
+  register: brew
 
 - name: Install homebrew cask packages
   community.general.homebrew_cask:
     name: "{{ item }}"
-    state: latest
+    state: installed
   with_items: "{{ homebrew_cask_packages }}"
+  register: brewcask
+
+- name: homebrew cleanup
+  command: brew cleanup
+  when: brewcask.changed
