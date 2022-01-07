@@ -1,3 +1,4 @@
+#!/usr/bin/env ansible-playbook -v
 ---
 - hosts: localhost
   connection: local
