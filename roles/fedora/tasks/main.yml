@@ -48,7 +48,3 @@
 - name: Go
   import_tasks: go.yml
   tags: go
-
-- name: NodeJS
-  import_tasks: nodejs.yml
-  tags: nodejs
