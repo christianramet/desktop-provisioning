@@ -12,6 +12,7 @@
     remote: flathub
     name:
       - com.bitwarden.desktop
+      - com.dbeaver.DBeaverCommunity
       - com.discordapp.Discord
       - com.microsoft.Teams
       - com.jgraph.drawio.desktop
