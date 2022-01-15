@@ -26,6 +26,7 @@ homebrew_packages:
 
 homebrew_cask_packages:
 - calibre
+- dbeaver-community
 - discord
 - docker
 - drawio
