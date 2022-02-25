@@ -24,12 +24,28 @@
       - pkg-config
       - poppler
 
-- name: Tap railwaycat Homebrew repository
+- name: Tap railwaycat Homebrew repository (emacs-mac)
   community.general.homebrew_tap:
     name: railwaycat/emacsmacport
     state: present
 
-- name: Install Homebrew cask packages
+# - name: Tap d12frosted Homebrew repository (emacs-plus)
+#   community.general.homebrew_tap:
+#     name: d12frosted/emacs-plus
+#     state: present
+
+- name: Remove Emacs (emacs-mac)
   community.general.homebrew_cask:
     name: emacs-mac
-    state: latest
+    state: absent
+
+# - name: Install Emacs (emacs-plus)
+#   homebrew:
+#     name: emacs-plus@28
+#     state: latest
+
+# - name: Symlink emacs-plus
+#   file:
+#     src: /opt/homebrew/opt/emacs-plus@28/Emacs.app
+#     dest: /Applications/Emacs.app
+#     state: link
