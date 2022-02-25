@@ -9,11 +9,14 @@ homebrew_packages:
 - ffmpeg
 - git
 - htop
+- inetutils
 - kepubify
 - kubernetes-cli
+- mysql
 - nmap
 - pass
 - pwgen
+- rar
 - ripgrep
 - rsync
 - stow
