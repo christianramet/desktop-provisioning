@@ -16,7 +16,6 @@ homebrew_packages:
 - nmap
 - pass
 - pwgen
-- rar
 - ripgrep
 - rsync
 - stow
@@ -40,9 +39,11 @@ homebrew_cask_packages:
 - microsoft-teams
 - mpv
 - nextcloud
+- rar
 - rectangle
 - slack
 - spotify
+- teamviewer
 - tor-browser
 - transmission
 - visual-studio-code
