@@ -34,10 +34,10 @@
 #     name: d12frosted/emacs-plus
 #     state: present
 
-- name: Remove Emacs (emacs-mac)
+- name: Install Emacs (emacs-mac)
   community.general.homebrew_cask:
     name: emacs-mac
-    state: absent
+    state: present
 
 # - name: Install Emacs (emacs-plus)
 #   homebrew:
