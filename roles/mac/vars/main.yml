@@ -49,6 +49,7 @@ homebrew_cask_packages:
 - tunnelblick
 - visual-studio-code
 - vlc
+- whatsapp
 - wireshark
 - wkhtmltopdf
 - zoom
