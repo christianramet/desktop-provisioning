@@ -24,6 +24,12 @@
       - pkg-config
       - poppler
 
+- name: Install Emacs Org-roam dependancies
+  homebrew:
+    state: latest
+    name:
+      - graphviz
+
 # - name: Tap railwaycat Homebrew repository (emacs-mac)
 #   community.general.homebrew_tap:
 #     name: railwaycat/emacsmacport
