@@ -27,6 +27,7 @@ homebrew_packages:
 - youtube-dl
 
 homebrew_cask_packages:
+- audacity
 - calibre
 - dbeaver-community
 - discord
