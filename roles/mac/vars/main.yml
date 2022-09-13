@@ -3,6 +3,7 @@ homebrew_packages:
 - awscli
 - azure-cli
 - coreutils
+- eksctl
 - exiftool
 - fd
 - fdupes
@@ -38,7 +39,9 @@ homebrew_cask_packages:
 - google-drive
 - libreoffice
 - microsoft-teams
+- mongodb-compass
 - mpv
+- mysqlworkbench
 - nextcloud
 - rar
 - rectangle
