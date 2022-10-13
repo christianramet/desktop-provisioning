@@ -34,3 +34,5 @@
     - http-server
     - bash-language-server
     - yaml-language-server
+    - typescript
+    - typescript-language-server
