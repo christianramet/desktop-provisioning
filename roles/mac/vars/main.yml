@@ -47,6 +47,7 @@ homebrew_cask_packages:
 - nextcloud
 - rar
 - rectangle
+- signal
 - slack
 - spotify
 - teamviewer
