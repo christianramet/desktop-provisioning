@@ -39,6 +39,7 @@ homebrew_cask_packages:
 - firefox
 - gimp
 - google-drive
+- iterm2
 - libreoffice
 - microsoft-teams
 - mongodb-compass
