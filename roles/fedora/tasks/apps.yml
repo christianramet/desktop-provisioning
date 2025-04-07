@@ -20,6 +20,7 @@
     - nmap
     - pass
     - pwgen
+    - python3-pip
     - ripgrep
     - rsync
     - the_silver_searcher

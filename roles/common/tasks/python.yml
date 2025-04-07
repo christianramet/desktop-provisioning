@@ -1,15 +1,7 @@
----
-- name: Install pip (python)
-  become: yes
-  dnf:
-    state: latest
-    name:
-    - python3-pip
-
 - name: Install python applications with pip
   pip:
     state: latest
     name:
       - awscli
       - python-lsp-server[all]
-      - youtube-dl
+      - yt-dlp

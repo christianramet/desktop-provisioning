@@ -21,3 +21,9 @@
   tags:
     - node
     - lsp
+
+- name: Python
+  import_tasks: python.yml
+  tags:
+    - python
+    - lsp
