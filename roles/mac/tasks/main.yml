@@ -11,6 +11,12 @@
     - apps
     - emacs
 
+- name: Install Nvim
+  import_tasks: nvim.yml
+  tags:
+    - apps
+    - nvim
+
 - name: Install golang environment
   import_tasks: golang.yml
   tags:

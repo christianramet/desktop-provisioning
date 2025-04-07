@@ -1,0 +1,5 @@
+---
+- name: Install nvim
+  homebrew:
+    name: nvim
+    state: latest
