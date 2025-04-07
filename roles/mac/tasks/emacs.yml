@@ -47,11 +47,11 @@
 
 - name: Install Emacs (emacs-plus)
   homebrew:
-    name: emacs-plus@28
+    name: emacs-plus@29
     state: latest
 
 - name: Symlink emacs-plus
   file:
-    src: /opt/homebrew/opt/emacs-plus@28/Emacs.app
+    src: /opt/homebrew/bin/emacs-plus@29/Emacs.app
     dest: /Applications/Emacs.app
     state: link
