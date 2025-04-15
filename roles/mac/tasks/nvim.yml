@@ -1,4 +1,13 @@
 ---
+- name: Install Nvim Kickstart dependancies
+  homebrew:
+    state: latest
+    name:
+    - git
+    - make
+    - unzip
+    - ripgrep
+
 - name: Install nvim
   homebrew:
     name: nvim
