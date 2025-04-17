@@ -3,7 +3,7 @@ full_name: Christian Ramet
 git_email: git@christianramet.com
 
 emacs_repo:  git@github.com:christianramet/emacs.d
-emacs_dir: ~/.emacs.d  
+emacs_dir: ~/config/emacs
 
 dotfiles_repo: git@github.com:christianramet/dotfiles
 dotfiles_dir: ~/.dotfiles

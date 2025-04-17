@@ -1,12 +1,13 @@
 ---
-- name: Install Neovim optional dependancies
+- name: Install Nvim Kickstart dependancies
   homebrew:
     state: latest
     name:
-    - fd
+    - git
+    - make
+    - unzip
     - ripgrep
 
----
 - name: Install nvim
   homebrew:
     name: nvim
