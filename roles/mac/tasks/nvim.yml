@@ -3,6 +3,7 @@
   homebrew:
     state: latest
     name:
+    - fd
     - git
     - make
     - unzip
