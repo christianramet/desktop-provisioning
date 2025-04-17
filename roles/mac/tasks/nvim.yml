@@ -1,4 +1,12 @@
 ---
+- name: Install Neovim optional dependancies
+  homebrew:
+    state: latest
+    name:
+    - fd
+    - ripgrep
+
+---
 - name: Install nvim
   homebrew:
     name: nvim

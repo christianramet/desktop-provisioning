@@ -14,6 +14,7 @@ homebrew_packages:
 - inetutils
 - kepubify
 - kubernetes-cli
+- lazygit
 - mysql
 - nmap
 - pass
