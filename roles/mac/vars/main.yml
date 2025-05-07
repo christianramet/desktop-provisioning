@@ -38,6 +38,7 @@ homebrew_cask_packages:
 - docker
 - drawio
 - firefox
+- font-inconsolata-nerd-font
 - gimp
 - google-drive
 - iterm2
