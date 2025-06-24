@@ -1,13 +1,20 @@
 ---
-- name: Install Nvim Kickstart dependancies
+
+- name: Install LazyVim dependancies (brew)
   homebrew:
     state: latest
     name:
+    - ast-grep
+    - curl
     - fd
+    - fish
+    - fzf
+    - gcc
     - git
     - make
-    - unzip
     - ripgrep
+    - unzip
+    - wget
 
 - name: Install nvim
   homebrew:
