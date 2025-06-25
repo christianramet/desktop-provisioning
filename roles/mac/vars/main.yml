@@ -31,12 +31,10 @@ homebrew_packages:
 - youtube-dl
 
 homebrew_cask_packages:
-- audacity
 - calibre
 - dbeaver-community
 - discord
 - docker
-- drawio
 - firefox
 - font-inconsolata-nerd-font
 - gimp
@@ -56,14 +54,12 @@ homebrew_cask_packages:
 - teamviewer
 - tor-browser
 - transmission
-- tunnelblick
 - visual-studio-code
 - vlc
 - whatsapp
 - wireshark
 - wkhtmltopdf
 - zoom
-- zotero
 
 dictionaries_dir: ~/Library/Spelling
 dictionaries:
