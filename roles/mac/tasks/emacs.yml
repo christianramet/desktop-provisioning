@@ -47,11 +47,15 @@
 
 - name: Install Emacs (emacs-plus)
   homebrew:
-    name: emacs-plus@29
+    name: emacs-plus@30
     state: latest
 
-- name: Symlink emacs-plus
-  file:
-    src: /opt/homebrew/bin/emacs-plus@29/Emacs.app
-    dest: /Applications/Emacs.app
-    state: link
+- name: Check if Emacs.app symlink exists
+  stat:
+    path: /Applications/Emacs.app
+  register: emacs_symlink
+
+- name: Symlink emacs-plus to Applications
+  command: >
+    osascript -e 'tell application "Finder" to make alias file to posix file "/opt/homebrew/opt/emacs-plus@30/Emacs.app" at posix file "/Applications" with properties {name:"Emacs.app"}'
+  when: not emacs_symlink.stat.exists
