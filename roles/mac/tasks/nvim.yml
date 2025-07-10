@@ -12,6 +12,7 @@
     - gcc
     - git
     - make
+    - markdownlint-cli2
     - ripgrep
     - unzip
     - wget
