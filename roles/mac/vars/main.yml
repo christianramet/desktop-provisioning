@@ -35,7 +35,6 @@ homebrew_cask_packages:
 - docker
 - firefox
 - font-inconsolata-nerd-font
-- gimp
 - google-drive
 - iterm2
 - microsoft-teams
