@@ -31,23 +31,19 @@ homebrew_packages:
 - youtube-dl
 
 homebrew_cask_packages:
-- calibre
 - dbeaver-community
-- discord
 - docker
 - firefox
 - font-inconsolata-nerd-font
 - gimp
 - google-drive
 - iterm2
-- libreoffice
 - microsoft-teams
 - mongodb-compass
 - mpv
 - mysqlworkbench
 - nextcloud
 - rar
-- rectangle
 - signal
 - slack
 - spotify
